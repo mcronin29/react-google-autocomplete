@@ -19,7 +19,8 @@ export default class ReactGoogleAutocomplete extends React.Component {
       sessionToken: PropTypes.object,
       types: PropTypes.arrayOf(PropTypes.string)
     }),
-    apiKey: PropTypes.string
+    apiKey: PropTypes.string,
+    defaultValue: PropTypes.string
   };
 
   constructor(props) {
@@ -131,6 +132,7 @@ export default class ReactGoogleAutocomplete extends React.Component {
       options,
       apiKey,
       inputAutocompleteValue,
+      defaultValue,
       ...rest
     } = this.props;
 
